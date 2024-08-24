@@ -1,0 +1,52 @@
+#button2 {
+    display: inline-block;
+    padding: 20px 60px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    opacity: 1;
+    margin: 4px 2px;
+    position: absolute;
+    background-color: red;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transition: 0.3s;  
+    border-radius: 12px;
+}
+#button1 {
+    display: inline-block;
+    padding: 20px 60px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    opacity: 1;
+    margin: 4px 2px;
+    position: absolute;
+    background-color: #04AA6D;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transition: 0.3s;
+    border-radius: 12px;
+}
+#button1:hover {opacity: .8}
+#button1:active {
+    background-color: #04AA6D;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
