@@ -1,27 +1,15 @@
-#button2 {
-    display: inline-block;
-    padding: 20px 60px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-    opacity: 1;
-    margin: 4px 2px;
-    position: absolute;
-    background-color: red;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 52%;
-    transition: 0.3s;  
-    border-radius: 12px;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
 }
-#button1 {
+
+.button-wrapper {
+    position: relative;
+}
+
+.button {
     display: inline-block;
     padding: 20px 60px;
     font-size: 24px;
@@ -31,22 +19,45 @@
     outline: none;
     color: #fff;
     border: none;
-    border-radius: 15px;
+    border-radius: 12px;
     box-shadow: 0 9px #999;
-    opacity: 1;
-    margin: 4px 2px;
-    position: absolute;
-    background-color: #04AA6D;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 40%;
     transition: 0.3s;
-    border-radius: 12px;
+    margin: 10px;
 }
-#button1:hover {opacity: .8}
-#button1:active {
+
+#button1 {
     background-color: #04AA6D;
+}
+
+#button2 {
+    background-color: red;
+    position: relative; 
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+#button2:active {
+    box-shadow: 0 5px #666;
+}
+
+#button1:active {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+}
+
+@media (max-width: 768px) {
+    .button {
+        padding: 15px 40px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .button {
+        width: 80%;
+        padding: 10px 30px;
+        font-size: 18px;
+    }
 }
